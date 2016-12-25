@@ -375,13 +375,11 @@
   background-color: #fff;
 }
 .desription-text-conecta p{
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 400;
 }
-.desription-text-conecta h3{
-  font-size: 20px;
-  font-weight: 100;
-}
+
 .datos-fuentes{
 	height: auto;
 	padding: 10px 15px;
@@ -402,7 +400,7 @@
     width: 65px;
     border-radius: 50px;
     background-color: #23D0CB;
-    color: #FFF;
+    color: #282c59;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -426,14 +424,13 @@
 }
 
 .total-ods{
-	border-right: #282c59 1px solid;
 	height: auto;
 }
 .titulo-total > h1{
 	color: #bdcc4a;
 	font-family: 'BebasNeue';
 	font-size: 40px;
-	margin: 20px 0px 30px 0px;
+	margin: 20px 0px 0px 0px;
 	line-height: 41px;
 	text-align: center;
 }
@@ -444,6 +441,7 @@ span#numero-total-ods{
 }
 .grafica-total-ods{
 	width: 85%;
+	margin-top: 60px;
 }
 .grafica-total-ods ul{
 	padding: 0;
@@ -683,7 +681,18 @@ span.numero-ods{
 	font-size: 12
 }
 .total-pais {
+	border-left: #282c59 1px solid;
     padding-top: 12px;
+}
+.total-pais h3{
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  color: #21285A;
+  margin: 0 auto;
+  padding: 10px 30px 5px 30px;
+  background-color: #fff;
 }
 .grafica-total-pais ul{
 	padding: 0;
@@ -713,6 +722,15 @@ span.numero-ods{
 	padding: 0 12px;
 	width: 35%;
     text-align: right;
+}
+.descripcion-descarga p{
+	color: #666666;
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	margin:20px 10px;
 }
 .descarga{
 	height: 57px;

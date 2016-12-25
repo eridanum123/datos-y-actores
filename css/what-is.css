@@ -117,7 +117,8 @@ p.link_what-is, p.link_what-is a{
   align-items: center;
   justify-content: center;
   z-index: 500;
-  margin-top: -50px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
 
 }
 .padding-sponsors {
@@ -129,7 +130,7 @@ p.link_what-is, p.link_what-is a{
     z-index: 100;
 }
 .sponsor-images{
-  border-right: 1px dotted #21285A;
+  border-right: 1px dotted #BDCC4A;
 }
 .sponsor-images.globales{
   border-right: none !important;
@@ -143,7 +144,7 @@ p.link_what-is, p.link_what-is a{
   padding: 8px 0px;
 }
 .sponsor-images ul li a img.img-responsive {
-    max-width: 90%;
+    max-width: 75%;
 }
 .country-title{
   height: 50px;
@@ -209,6 +210,23 @@ background: #2baae2;
     box-shadow: none;
     float: left;
 }
+.video-datarep {
+    margin: 20px auto;
+    width: 50%;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media(min-width:1200px) {
   .what-is-box {
     width: 60%;
@@ -216,6 +234,13 @@ background: #2baae2;
   }
   .sponsor-img-container {
     padding: 10px;
+  }
+  .sponsor-images ul li a img.img-responsive {
+    max-width: 50%;
+  }
+
+.sponsor-images.globales ul li a img.img-responsive {
+    max-width: 48%;
   }
 }
 @media(min-width:1500px) {
@@ -225,10 +250,10 @@ background: #2baae2;
 }
 @media(max-width: 992px) {
   .sponsor-images ul li a img.img-responsive {
-    max-width: 75%;
+    max-width: 50%;
   }
   .sponsor-images.globales ul li a img.img-responsive {
-    max-width: 50%;
+    max-width: 35%;
   }
   .globales>.country-title{
     background-color: #bdcc4a;
@@ -236,6 +261,10 @@ background: #2baae2;
   .globales>.country-title h3 {
     padding-top: 10px;
   }
+  .video-datarep {
+    margin: 20px auto;
+    width: 80%;
+}
 }
 @media(max-width:800px) {
   .news-box {
@@ -270,6 +299,9 @@ background: #2baae2;
     padding-top:10px;
     padding-bottom:10px;
     margin: 10px 0;
+  }
+  .video-datarep {
+    width: auto;
   }
 }
 

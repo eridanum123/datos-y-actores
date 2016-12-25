@@ -1,4 +1,8 @@
-
+/*MENU*/
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 /** CONTENIDO **/
 .title-modulo.aprende{
 	padding-top: 25px;
@@ -6,36 +10,49 @@
 .aprende-anos{
 	padding-top: 20px;
 	padding-bottom: 10px;
-	border-right: #282c59 1px solid;
-	height: 410px;
+	height: auto;
+}
+.aprende-anos.ano-2017{
+	border-left: #282c59 1px solid;
 }
 .title-year h3{
 	font-family: 'BebasNeue';
 	font-size:70px;
 	color: #23d0cb; 
-	text-align: right;
+	text-align: center;
 	margin: 0;
 	line-height: 70px;
 }
 .title-year{
 	padding: 10px;
 }
-.title-image{
-	border-left: 1px dotted #23d0cb;
-	margin-top: 20px;
+.title-taller{
+	padding: 15px;
 }
+.title-image{
+	border-right: none;
+}
+.title-image img {
+	    margin: 0 auto;
+	    float: none;
+	}
 .title-taller h4{
 	font-family: 'BebasNeue';
-	font-size: 25px;
+	font-size: 20px;
 	color: #21285a;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .title-taller h4>span{
 	color: #bdcc4a;
-	font-size: 30px;
+	font-size: 25px;
 }
 .countries-aprende{
-	margin: 40px 0 20px 0;
+	margin: 20px 0;
+}
+.country-2016{
+	width: auto;
 }
 .circulo-country {
     height: 65px;
@@ -49,17 +66,17 @@
     line-height: 13px;
     text-align: center;
     padding: 27px 2px;
-    margin: 0 22px;
+    margin-left: 20%;
 }
 .txt-cr{
 	padding-top: 22px;
 }
 .fecha-taller{
 	font-family: 'Roboto';
-	font-size: 12px;
+	font-size: 14px;
 	color: #21285a;
 	text-align: center;
-	font-weight: 100;
+	font-weight: 400;
 	margin-top: 10px;
 }
 .cuadro-info{
@@ -70,7 +87,7 @@
 }
 .cuadro-info p{
 	font-family: 'Roboto';
-	font-size: 12px;
+	font-size: 16px;
 	color: #fff;
 	text-align: left;
 	font-weight: 400;
@@ -91,21 +108,40 @@
 	margin-bottom: 40px;
 }
 .logos-aprende>div>img {
+	max-width: 82%;
     margin: 0px auto 20px auto;
 }
 .escuela-datos_aprende img{
 	max-width: 70%;
 }
+.social-tic_aprende img {
+    max-width: 70%;
+}
 @media only screen and (min-width: 1200px){
-	.aprende-anos{
-		height: 450px;
+
+	.title-image {
+		border-right: 1px dotted #23d0cb;
+	    margin-top: 20px;
+	}
+	.title-image img {
+    margin: 0 auto;
+    float: right;
+}
+	.title-taller h4{
+		text-align: left;
 	}
 	.country-taller{
     	padding: 0;
     	margin: 0;
 	}
-	.circulo-country {
+	.country-2016>.circulo-country {
 		margin-left: 30%;
+	}
+	.circulo-country {
+		margin-left: 38%;
+	}
+	.logos-aprende>div>img {
+		max-width: 62%;
 	}
 }
 @media only screen and (min-width: 1439px){
@@ -116,27 +152,45 @@
 	    font-weight: 400;
 	    font-size: 13px;
 	    line-height: 15px;
-	    padding: 20px 2px;
-	    margin: 0;
+	}
+	.logos-aprende>div>img {
+		max-width: 50%;
 	}
 }
 @media only screen and (max-width: 1093px){
 	.circulo-country{
-		margin: 0 15px;
+		margin: 0 40px;
 	}
 }
 @media only screen and (max-width: 992px){
 	.description-modulo-full {
 	    padding: 12px 25px;
 	}
+
 	.aprende-anos{
 		height: auto;
-		border-right: none;
-		border-bottom: #282c59 1px solid;
+	}
+	.aprende-anos.ano-2017{
+		border-left: none;
+		border-top: #282c59 1px solid;
+	}
+	.title-taller {
+	    width: 70%;
+	    margin: 0 auto;
+	}
+	.title-taller h4{
+		text-align: left;
+	}
+	.title-image {
+		border-right: 1px dotted #23d0cb;
 	}
 	.country-taller{
 		margin: 0px auto;
     	padding: 0 3%;
+	}
+	.country-2016{
+		width: 60%;
+		margin: 0 30% !important;
 	}
 	.circulo-country{
 	    height: 70px;
@@ -148,13 +202,16 @@
 	    margin: 0;
 	}
 	.fecha-taller {
-	    margin-top: 12px;
+	    margin-top: 20px;
 	}
 	.aprende-aliados {
 	    padding-top: 20px;
 	}
 	.logos-aprende>div>img {
 	    max-width: 70%;
+	}
+	.social-tic_aprende img {
+	    width: 46% !important;
 	}
 	.escuela-datos_aprende img {
 	    max-width: 40% !important;
@@ -167,9 +224,25 @@
 	}
 }
 @media only screen and (max-width: 768px){
+	.title-image {
+	    border-right: none;
+	}
+	.title-image img {
+	    margin: 0 auto;
+	}
+	.title-taller {
+	    width: 100%;
+	}
+	.title-taller h4{
+		text-align: center;
+	}
 	.country-taller{
 		margin: 10px auto;
    		padding-left: 18%;
+	}
+	.country-2016{
+		width: 100%;
+		margin: 0 !important;
 	}
 	.circulo-country{
 		height: 90px;

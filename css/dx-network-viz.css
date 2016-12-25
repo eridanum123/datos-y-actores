@@ -4,9 +4,7 @@
   /*margin-bottom: 0.5vh;*/
 }
 .network-viz-intro p{
-  font-size: 17px;
-  line-height: 20px;
-  padding: 20px;
+  padding: 15px;
   font-family: 'Roboto';
   font-weight: 400;
   text-align: center;
@@ -26,47 +24,22 @@
   height: 756px;
 }
 */
-.filters-network{
-  padding: 15px !important;
-}
-.filter-conecta{
-  margin: 5px auto !important;
-  float: left;
-  width: 100%;
-}
-.filter-conecta>.form-control{
-  width: 60%;
-  font-family: 'Roboto';
-  font-size: 14px;
-  color: #575757;
-}
-.filter-conecta label{
-  font-family: 'BebasNeue';
-  font-size: 18px;
-  color: #21285A;
-  text-align: right;
-  line-height: 34px;
-}
 .contacto-info-usuario{
   float: left;
-  width: 100%;
-  background-color: #666666;
-  padding: 20px 20px 10px 20px;
+  background-color: #21285A;
+  padding: 10px 20px;
   font-family: 'Roboto';
   font-weight: 400;
   text-align: center;
   color: #fff;
 }
 .contacto-info-usuario p{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 18px;
-  font-size: 16px;
+  line-height: 16px;
+  font-size: 14px;
 }
 .contacto-info-usuario p a{
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 .contacto-info-usuario p a:hover{
   color: #23d2cd;
@@ -179,6 +152,7 @@ text {
   height: 83.5vh;
   
 }
+
 .network-node-info h2{
   color:#282c59;
   font-weight:800;
@@ -186,6 +160,8 @@ text {
   text-align:center;
   font-size:4em;
 }
+
+
 .conventions-laws{
   height: 45px;
 }
@@ -486,24 +462,14 @@ text {
   font-size: 12px;
 }
 
-.network-row .source-link {
-  background-image: url(../images/ley-link_off.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
+
+.network-row .source-link{
   text-align: center;
   width: 100%;
-  margin: auto;
-  height: 60px;
+  text-transform: none;
+
 }
-.network-row .source-link:hover{
-  background-image: url(../images/ley-link_on.png);
-}
-.source-link a{
-  display: block;
-  height: 60px;
-  width: 40px;
-}
+
 .network-grey-row{
   background-color: #EEE;
 }
@@ -544,12 +510,11 @@ text {
   .item-perfil_2{
     height: 115px;
   }
-  .network-row .source-link {
-    width: 60%;
-    height: 60px;
-  }
 }
 @media only screen and (max-width: 992px){
+  #forcemap{
+    border-bottom: solid 1px grey;
+  }
   .network-download-links h4 {
       font-size: 22px;
   }
@@ -567,22 +532,10 @@ text {
     padding-top: 10px;
     height: 190px;
   }
-  .network-row .source-link {
-    width: 40%;
-    height: 50px;
-  }
 }
 @media only screen and (max-width: 768px){
   .network-container{
     padding-top: 8.5vh;
-  }
-  .filter-conecta>.form-control{
-    width: 90%;
-    margin: auto 5%;
-  }
-  .filter-conecta label{
-    text-align: center;
-    line-height: auto;
   }
   .conecta-network img {
     max-width: 80%;
@@ -625,14 +578,8 @@ text {
   .img-ley-link {
     background-size: 70%;
     background-repeat: no-repeat;
-  }
-  .contacto-info-usuario p{
-    width: 90%;
-  }
-  .network-row .source-link {
-    width: 60%;
-    height: 50px;
-  }
+}
+
 
 }
 @media only screen and (max-width: 500px){
@@ -659,12 +606,5 @@ text {
   }
   .item-perfil_2 {
     height: 185px;
-  }
-  .contacto-info-usuario p{
-    width: 100%;
-  }
-  .network-row .source-link {
-    width: 100%;
-    height: 80px;
   }
 }
