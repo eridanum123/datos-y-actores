@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.sidebar',
   'myApp.network-viz',
   'myApp.what-is',
+  'myApp.aprende',
   //'myApp.ecoView',
   // 'myApp.view2',
   'myApp.version'
