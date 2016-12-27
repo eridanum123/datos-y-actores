@@ -9,6 +9,7 @@ angular.module('myApp', [
   'myApp.network-viz',
   'myApp.what-is',
   'myApp.aprende',
+  'myApp.publica',
   //'myApp.ecoView',
   // 'myApp.view2',
   'myApp.version'
