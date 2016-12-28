@@ -75,7 +75,7 @@ angular.module('myApp.countries', ['ngRoute'])
 			    d3.select(this)
 			    .on("mouseover", function(d) {
 		            tip.html("<b>" + $scope.ODSs[odsIndex].toLowerCase() + "</b>" )
-		                .style("left", (d3.event.pageX) + 100 + "px")//ojo cambio
+		                .style("left", (d3.event.pageX) + 10 + "px")
 		                .style("top", (d3.event.pageY) + 10 + "px");
 
 		            tip.transition()
@@ -103,7 +103,7 @@ angular.module('myApp.countries', ['ngRoute'])
 		      	var odsIndex = d3.select(this).attr("id").split("-")[1];
 			  	d3.select(this)
 				    .style("width", function(d){
-				      	return width*($scope.relPercentODS(odsIndex)) + "px";
+				      	return width*($scope.relPercentODS(odsIndex)+200) + "px";
 				    })
 				    .select(".barra-value-ods") 
 			  		.html(ods_totals[odsIndex]);
