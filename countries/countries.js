@@ -57,8 +57,7 @@ angular.module('myApp.countries', ['ngRoute'])
 			  	.html(ods_totals[odsIndex])
 				.transition()
 				.delay(750)
-//				.style("top", -height*($scope.relPercentODS(odsIndex)) + "px"); //Linea original
-                .style("top", -(height*($scope.relPercentODS(odsIndex))+20) + "px"); //Mejora Ing Santiago Rojas
+				.style("top", -(height*($scope.relPercentODS(odsIndex))+20) + "px");
 
 			  	d3.select(this)
 				.transition()
@@ -76,7 +75,7 @@ angular.module('myApp.countries', ['ngRoute'])
 			    d3.select(this)
 			    .on("mouseover", function(d) {
 		            tip.html("<b>" + $scope.ODSs[odsIndex].toLowerCase() + "</b>" )
-		                .style("left", (d3.event.pageX) + 10 + "px")
+		                .style("left", (d3.event.pageX) + 100 + "px")//ojo cambio
 		                .style("top", (d3.event.pageY) + 10 + "px");
 
 		            tip.transition()
