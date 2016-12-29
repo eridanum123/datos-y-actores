@@ -57,8 +57,8 @@ angular.module('myApp.countries', ['ngRoute'])
 			  	.html(ods_totals[odsIndex])
 				.transition()
 				.delay(750)
-				.style("top", -(height*($scope.relPercentODS(odsIndex))+20) + "px");
-
+	//			.style("top", -(height*($scope.relPercentODS(odsIndex))+20) + "px");
+				.style("top", -(height*($scope.relPercentODS(odsIndex))) + "px");
 			  	d3.select(this)
 				.transition()
 				.delay(750)
