@@ -45,7 +45,8 @@ angular.module('myApp.countries', ['ngRoute'])
 		function calculateBars()
 		{
 			d3.selectAll(".barra-ods")
-			  .each(function(d,i){
+			  .each(function(d,i)
+{
 			  	d3.select(this).style("height",null);
 			  	var height = 280;
 			  	// var height = d3.select(this).node().getBoundingClientRect().height;
@@ -96,22 +97,22 @@ angular.module('myApp.countries', ['ngRoute'])
 
 			  })
 
-			  d3.selectAll(".barra-ods-res")
-			  .each(function(d,i){
-			  	d3.select(this).style("width",null);
-			  	var width = d3.select(this).node().getBoundingClientRect().width;
-		      	var odsIndex = d3.select(this).attr("id").split("-")[1];
+			//  d3.selectAll(".barra-ods-res")
+			 // .each(function(d,i){
+			  //	d3.select(this).style("width",null);
+			  //	var width = d3.select(this).node().getBoundingClientRect().width;
+		     // 	var odsIndex = d3.select(this).attr("id").split("-")[1];
 			  	
-				d3.select(this)
+			//	d3.select(this)
 			//	    .style("width", function(d){
 			//	      	return width*($scope.relPercentODS(odsIndex)) + "px";
 			//	    })
-					.style("left", -(width*($scope.relPercentODS(odsIndex))+100) + "px");
-				    .select(".barra-value-ods") 
-			  		.html(ods_totals[odsIndex]);
+			//		.style("left", -(width*($scope.relPercentODS(odsIndex))+100) + "px");
+			//	    .select(".barra-value-ods") 
+			 // 		.html(ods_totals[odsIndex]);
 
-			  })
-			}
+			  }//)
+		//}
 
 		calculateBars();
 		d3.select(window).on('resize', calculateBars); 
