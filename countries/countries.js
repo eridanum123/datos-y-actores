@@ -107,7 +107,7 @@ angular.module('myApp.countries', ['ngRoute'])
 				    })
 	
 				    .select(".barra-value-ods") 
-			  	//	.html(ods_totals[odsIndex]);
+			  		.html(ods_totals[odsIndex]);
 
 			  })
 			}
