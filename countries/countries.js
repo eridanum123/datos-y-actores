@@ -101,10 +101,12 @@ angular.module('myApp.countries', ['ngRoute'])
 			  	d3.select(this).style("width",null);
 			  	var width = d3.select(this).node().getBoundingClientRect().width;
 		      	var odsIndex = d3.select(this).attr("id").split("-")[1];
-			  	d3.select(this)
-				    .style("width", function(d){
-				      	return width*($scope.relPercentODS(odsIndex)+200) + "px";
-				    })
+			  	
+				d3.select(this)
+			//	    .style("width", function(d){
+			//	      	return width*($scope.relPercentODS(odsIndex)) + "px";
+			//	    })
+					.style("left", -(width*($scope.relPercentODS(odsIndex))+100) + "px");
 				    .select(".barra-value-ods") 
 			  		.html(ods_totals[odsIndex]);
 
