@@ -103,7 +103,7 @@ angular.module('myApp.countries', ['ngRoute'])
 		      	var odsIndex = d3.select(this).attr("id").split("-")[1];
 			  	d3.select(this)
 				
-				.style("left", -(height*($scope.relPercentODS(odsIndex))+90) + "px");
+				.style("top", -(height*($scope.relPercentODS(odsIndex))) + "px");
 				    .style("width", function(d){
 				      	return width*($scope.relPercentODS(odsIndex)) + "px";
 				    })
