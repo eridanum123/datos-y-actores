@@ -103,14 +103,13 @@ angular.module('myApp.countries', ['ngRoute'])
 		      	var odsIndex = d3.select(this).attr("id").split("-")[1];
 			  	d3.select(this)
 				
-				.style("top", -(height*($scope.relPercentODS(odsIndex))+20) + "px");
+				.style("left", -(height*($scope.relPercentODS(odsIndex))+90) + "px");
 				    .style("width", function(d){
 				      	return width*($scope.relPercentODS(odsIndex)) + "px";
-								.html(ods_totals[odsIndex]);
 				    })
 	
 				    .select(".barra-value-ods") 
-			  
+			  		.html(ods_totals[odsIndex]);
 
 			  })
 			}
