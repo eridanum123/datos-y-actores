@@ -189,3 +189,9 @@ angular.module('myApp.countries', ['ngRoute'])
     	controller: 'CountryCtrl'	
   	});
 }]);
+
+.horizontal-value-ods{
+float: right;
+top: -26px;
+left: 20px;
+}
