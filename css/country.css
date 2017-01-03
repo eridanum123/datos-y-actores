@@ -460,8 +460,16 @@ span#numero-total-ods{
 	color: #23D0CB;
 	text-align: center;
 	padding-top: 245px;
+	}
+	
 
+.horizontal-value-ods{
+float: right;
+top: -26px;
+left: 20px;
 }
+	
+	
 .barra-ods{
 	width: 3.3%;
     margin: 10px 2% 0% 0%;
