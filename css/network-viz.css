@@ -47,6 +47,16 @@
   text-align: right;
   line-height: 34px;
 }
+.button-clean{
+  text-align: center;
+}
+.button-clean>.btn{
+  background-color: #575757;
+  color:#ffffff;
+}
+.button-clean>.btn:hover{
+  background-color: #23D0CB;
+}
 .contacto-info-usuario{
   float: left;
   width: 100%;

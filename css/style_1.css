@@ -12,36 +12,22 @@ Updated: 2016-11-23 14:06:46
 
 */
 
-
-
-@media (min-width: 1200px){.container {width: 1280px;}}
-
-body{
-	background-color:#fcfcfc;
-	font-family: 'istok_webregular';
-	font-size:13px;
-	color:#212121;
-}
-header{
-	background-color:#4FBBBD;
-	padding:24px 0px;
+.home.blog {
+    padding-top: ;
 }
 
-
-/* -------------------- */
-
-@media (min-width: 992px)
-.col-md-7 {
-    width: 100%;
+.photoshoot-container {
+    padding: 20px 60px;
 }
-
-@media (min-width: 992px)
-.col-md-5 {
-    width: 41.66666667%;
+.photos-box h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 26px;
 }
-
-/* -------------------- */
-
+.photos-details h3 {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
 
 .logo{
 	margin-top:4px;
@@ -1434,12 +1420,23 @@ header .container .photoshoot-container {
     font-weight: bold;
 }
 
-#home-bottom-text  {
-    color: #4FBBBD;
-    text-align: center;
+.home-bottom-text  {
     padding: 0 0 20px;
 }
-
+.home-bottom-text h3{
+	font-family: 'Roboto';
+	font-size: 20px;
+	color: #23D0CB;
+    text-align: center;
+}
+.home-bottom-link a{
+	font-family: 'BebasNeue';
+	font-size: 22px;
+	color: #23D0CB;
+}
+.home-bottom-link a:hover{
+	color: #242A59;
+}
 #home-bottom-text span, #home-bottom-text a {
     color: #37a1dd;
     font-weight: bolder;
@@ -1459,8 +1456,8 @@ header .container .photoshoot-container {
 }
 
 .home .photos-group .photos-box {
-	/*padding: 0 25px;*/
-	margin: 25px;
+	padding: 0 10px;
+	/*margin: 25px;*/
 	width: 342px;
 }
 

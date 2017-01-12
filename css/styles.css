@@ -14,15 +14,9 @@ body {
   width: 100%;
 }
 
-h2 {
-  font-family: 'Helvetica', serif;
-  color: #fff;
-
-}
 
 a{
   text-decoration:none;
-  color:#000;
 }
 a:hover, a:focus {
     text-decoration: none;
