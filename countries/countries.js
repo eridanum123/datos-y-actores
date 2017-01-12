@@ -73,7 +73,7 @@ angular.module('myApp.countries', ['ngRoute'])
 
 			    d3.select(this)
 			    .on("mouseover", function(d) {
-		            tip.html("<b>" + $scope.ODSs[odsIndex].toLowerCase() + "</b>" )
+		            tip.html("<b>" + $scope.ODSs[odsIndex] + "</b>" )
 		                .style("left", (d3.event.pageX) + 10 + "px")
 		                .style("top", (d3.event.pageY) + 10 + "px");
 
