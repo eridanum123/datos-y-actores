@@ -967,6 +967,9 @@ span.numero-ods{
 	.pais-data h2>span{
 		width: 32%;
 	}
+	.pais-data > h2 {
+    font-size: 40px;
+}
 	.descarga h4 {
 	    font-size: 30px;
 	}

@@ -404,6 +404,7 @@ p.news-link a:hover{
   .intro .big-text{
     font-size: 2em;
     line-height: 1em;
+    padding: 0 10px;
   }
   .menu-modulos{
     width: 100%;
@@ -454,7 +455,7 @@ p.news-link a:hover{
     margin: 20px 0% !important; 
   }
   .news-box {
-    height: 200px;
+    height: auto;
     padding: 40px 40px 20px 40px;
   }
   .img-modulos{
